@@ -1,0 +1,27 @@
+{
+  "name": "drunk-text",
+  "version": "1.0.0",
+  "description": "",
+  "main": "DrunkText.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apollo-road/Drunk-Text.git"
+  },
+  "keywords": [
+    "sms",
+    "drinks"
+  ],
+  "author": "Apollo Road",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apollo-road/Drunk-Text/issues"
+  },
+  "homepage": "https://github.com/apollo-road/Drunk-Text#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "twilio": "^2.11.1"
+  }
+}
