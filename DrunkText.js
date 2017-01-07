@@ -43,9 +43,9 @@ function initializeServer()
     res.send('Drink MOar Whiskeee!')
     var body = req.query['Body'];
     var from = req.query['From'];
-
+console.log(req);
     drink(body, from);
-    console.log(req.query);
+
   })
 
   app.listen(server_port, function () {
