@@ -41,7 +41,7 @@ function initializeServer()
 
   app.get('/drink', function (req, res) {
 
-    res.send('Drink MOar Whiskee!')
+    res.send('Drink MOar Whiskeee!')
     var body = req.query['Body'];
     var from = req.query['From'];
 
