@@ -5,7 +5,7 @@
   "main": "DrunkText.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node Drunk-Text.js"
+    "start": "node DrunkText.js"
   },
   "repository": {
     "type": "git",
