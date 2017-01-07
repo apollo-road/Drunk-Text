@@ -29,7 +29,7 @@ var liquors = {
     ]
 }
 
-var server_port = process.env.PORT || 8080
+var server_port = (process.env.PORT || 8080)
 
 
 function initializeServer()
@@ -49,7 +49,7 @@ function initializeServer()
   })
 
   app.listen(server_port, function () {
-    console.log('Example app listening on port 3000!')
+    console.log('Example app listening on port ' + server_port);
   })
 }
 
