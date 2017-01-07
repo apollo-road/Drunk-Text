@@ -17,7 +17,7 @@ function initializeServer()
     console.log(req.query);
   })
 
-  app.listen(8080, function () {
+  app.listen(80, function () {
     console.log('Example app listening on port 3000!')
   })
 }
