@@ -15,7 +15,7 @@ function initializeServer()
     var body = req.query['Body'];
     var from = req.query['From'];
 
-    //drink(body, from);
+    drink(body, from);
     console.log(req.query);
   })
 
@@ -26,8 +26,10 @@ function initializeServer()
 
 function drink(body, from)
 {
+  console.log("body: " + body);
   var response = "";
-  body = body.trim().tolowerCase();
+  body = body.trim()
+  body = body.toLowerCase();
   if (body.indexOf("drink") != -1)
   {
     response = "Respond with your liquor of choice for a drink suggestion!";
