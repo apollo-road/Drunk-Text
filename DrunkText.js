@@ -10,27 +10,11 @@ function initializeServer()
   app.get('/drink', function (req, res) {
 
     res.send('Drink MOar Whiskee!')
-    var body = req.param('Body');
-    var from = req.param('From');
-
-    var accountSid = 'ACc7e2749325bb21ed1e9c4dece6a436c6'; // Your Account SID from www.twilio.com/console
-    var authToken = 'a62fb864f147b6b68377b88728e1650f';   // Your Auth Token from www.twilio.com/console
-
-    var twilio = require('twilio');
-    var client = new twilio.RestClient(accountSid, authToken);
-    /*
-    client.messages.create({
-        body: body,
-        to: '+15053792604',  // Text this number
-        from: '+19709991133' // From a valid Twilio number
-    }, function(err, message) {
-        console.log(message.sid);
-    });*/
+    var body = req.query['Body'];
+    var from = req.query['From'];
 
     //drink(body, from);
-    console.log(req.params);
     console.log(req.query);
-    console.log(req.body);
   })
 
   app.listen(8080, function () {
@@ -44,27 +28,37 @@ function drink(body, from)
   body = body.trim().tolowerCase();
   if (body.indexOf("drink") != -1)
   {
-    var response = "Respond with your liquor of choice for a drink suggestion!";
+    response = "Respond with your liquor of choice for a drink suggestion!";
   }
   else {
-
+    for (var key in liquors)
+    {
+      if (body.indexOf(key) != -1)
+      {
+        var drinkIndex = getRandomInt(0, liquors[key].length-1);
+        var drink = liquors[key][drinkIndex];
+        response = drink.name + "\n \n" + drink.description;
+      }
+    }
   }
 
+  var accountSid = 'ACc7e2749325bb21ed1e9c4dece6a436c6'; // Your Account SID from www.twilio.com/console
+  var authToken = 'a62fb864f147b6b68377b88728e1650f';   // Your Auth Token from www.twilio.com/console
+
+  var twilio = require('twilio');
+  var client = new twilio.RestClient(accountSid, authToken);
+
+  client.messages.create({
+      body: response,
+      to: from,  // Text this number
+      from: '+19709991133' // From a valid Twilio number
+  }, function(err, message) {
+      console.log(message.sid);
+  });
 }
 
-
-
-
-/*
-client.messages.create({
-    body: 'Hello from your butt',
-    to: '+15053401323',  // Text this number
-    from: '+19709991133' // From a valid Twilio number
-}, function(err, message) {
-    console.log(message.sid);
-});
-*/
-
-
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 initializeServer();
