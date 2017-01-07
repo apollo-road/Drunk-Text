@@ -1,4 +1,34 @@
-var liquors = {}
+var liquors = {
+  "whiskey": [
+      {
+        "name": "Gold Rush",
+        "description": "Bourbon, honey syrup, and lemon juice."
+      },
+      {
+        "name": "The Revolver",
+        "description": "Rye heavy bourbon, coffee liqueur, orange bitters, and orange garnish."
+      },
+      {
+        "name": "Suffering Bastard",
+        "description": "Bourbon, gin, lime juice, bitters, ginger ale."
+      },
+      {
+        "name": "The Paper Plane",
+        "description": "Bourbon, Aperol, Amaro, fresh lemon juice"
+      }
+    ],
+    "vodka": [
+      {
+        "name": "Mitch Martini",
+        "description": "Zubrowka Bison grass vodka, pressed apple juice, lemon juice, passionfruit syrup, peach schnapps."
+      },
+      {
+        "name": "AMF",
+        "description": "The bartender's suicide. In blue. Vodka, gin, rum, blue curacao, sweet and sour, top with sprite."
+      }
+    ]
+}
+
 var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
 var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
 
