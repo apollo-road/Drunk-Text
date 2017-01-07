@@ -29,7 +29,7 @@ var liquors = {
     ]
 }
 
-var server_port = (process.env.PORT || 8080)
+var server_port = (process.env.PORT || 8080);
 
 
 function initializeServer()
