@@ -43,7 +43,6 @@ function initializeServer()
     res.send('Drink MOar Whiskeee!')
     var body = req.query['Body'];
     var from = req.query['From'];
-console.log(req);
     drink(body, from);
 
   })
@@ -57,8 +56,8 @@ function drink(body, from)
 {
   console.log("body: " + body);
   var response = "";
-  body = body.trim()
-  body = body.toLowerCase();
+  body = body.trim().toLowerCase();
+
   if (body.indexOf("drink") != -1)
   {
     response = "Respond with your liquor of choice for a drink suggestion!";
@@ -71,6 +70,7 @@ function drink(body, from)
         var drinkIndex = getRandomInt(0, liquors[key].length-1);
         var drink = liquors[key][drinkIndex];
         response = drink.name + "\n \n" + drink.description;
+        break;
       }
     }
   }
