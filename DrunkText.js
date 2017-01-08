@@ -43,7 +43,10 @@ function initializeServer()
     res.send('Drink MOar Whiskeee!')
     var body = req.query['Body'];
     var from = req.query['From'];
-    drink(body, from);
+    if (body && body.length > 0)
+    {
+      drink(body, from);
+    }
 
   })
 
