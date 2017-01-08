@@ -2,7 +2,7 @@
   "whiskey": [
       {
         "name": "Gold Rush",
-        "description": "Bourbon, honey syrup, and lemon juice."
+        "description": "Bourbon\n honey\n syrup\n lemon juice."
       },
       {
         "name": "The Revolver",
@@ -17,7 +17,7 @@
         "description": "Bourbon, Aperol, Amaro, fresh lemon juice"
       }
     ],
-    "vodka": [
+  "vodka": [
       {
         "name": "Mitch Martini",
         "description": "Zubrowka Bison grass vodka, pressed apple juice, lemon juice, passionfruit syrup, peach schnapps."
