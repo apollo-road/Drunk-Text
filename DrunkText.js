@@ -83,16 +83,18 @@ function drink(body, from)
     }
   }
 
+  if (response.length > 0)
+  {
+    var client = new twilio.RestClient(accountSid, authToken);
 
-  var client = new twilio.RestClient(accountSid, authToken);
-
-  client.messages.create({
-      body: response,
-      to: from,  // Text this number
-      from: '+19709991133' // From a valid Twilio number
-  }, function(err, message) {
-      console.log("Sent message to " + from);
-  });
+    client.messages.create({
+        body: response,
+        to: from,  // Text this number
+        from: '+19709991133' // From a valid Twilio number
+    }, function(err, message) {
+        console.log("Sent message to " + from);
+    });
+  }
 }
 
 function getRandomInt(min, max) {
