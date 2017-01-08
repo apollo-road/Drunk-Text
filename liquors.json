@@ -6,15 +6,15 @@
       },
       {
         "name": "The Revolver",
-        "description": "Rye heavy bourbon\n coffee liqueur\n orange bitters\n orange garnish."
+        "description": "Rye heavy bourbon\ncoffee liqueur\n orange bitters\n orange garnish."
       },
       {
         "name": "Suffering Bastard",
-        "description": "Bourbon, gin\n lime juice\n bitters\n ginger ale."
+        "description": "Bourbon\nGin\n lime juice\n bitters\n ginger ale."
       },
       {
         "name": "The Paper Plane",
-        "description": "Bourbon\n Aperol\n Amaro\n fresh lemon juice."
+        "description": "Bourbon\nAperol\nAmaro\n fresh lemon juice."
       }
     ],
   "vodka": [
@@ -24,7 +24,45 @@
       },
       {
         "name": "AMF",
-        "description": "The bartender's suicide.\n vodka\n gin\n rum\n blue curacao\n sweet and sour\n top with sprite."
+        "description": "The bartender's suicide.\nVodka\nGin\nRum\nBlue curacao\n sweet and sour\n top with sprite."
       }
-    ]
+    ],
+  "gin": [
+      {
+        "name": "Bee's Knees",
+        "description": "Gin\n fresh lemon juice\n honey syrup (1:1 water:honey)"
+      },
+      {
+        "name": "Gin gimlet",
+        "description": "Plymouth gin\n fresh lime juice\n simple syrup\n rosemary leaves\n garnish: cucumber slice"
+      }
+    ],
+  "rum": [
+      {
+        "name": "Rum sour",
+        "description": "Rum\n sweet and sour\n egg white."
+      }
+  ],
+  "tequila": [
+      {
+        "name": "Tequila sazerac",
+        "description": "Tequila"
+      }
+  ],
+  "scotch": [
+      {
+        "name": "Bobby Burns",
+        "description": "Scotch"
+      }
+  ],
+  "multiple": [
+      {
+        "name": "Long Island Iced Tea",
+        "description": "Vodka\nGin\nRum\nTriple sec\n sweet & sour\n splash of coke\n garnish:lemon."
+      },
+      {
+        "name": "Tokyo Tea",
+        "description": "Vodka\nGin\nRum\nTriple sec\nMidori\n sweet & sour\n splash sprite\n garnish: cherry."
+      }
+  ]
 }
