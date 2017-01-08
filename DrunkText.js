@@ -1,33 +1,3 @@
-var liquors = {
-  "whiskey": [
-      {
-        "name": "Gold Rush",
-        "description": "Bourbon, honey syrup, and lemon juice."
-      },
-      {
-        "name": "The Revolver",
-        "description": "Rye heavy bourbon, coffee liqueur, orange bitters, and orange garnish."
-      },
-      {
-        "name": "Suffering Bastard",
-        "description": "Bourbon, gin, lime juice, bitters, ginger ale."
-      },
-      {
-        "name": "The Paper Plane",
-        "description": "Bourbon, Aperol, Amaro, fresh lemon juice"
-      }
-    ],
-    "vodka": [
-      {
-        "name": "Mitch Martini",
-        "description": "Zubrowka Bison grass vodka, pressed apple juice, lemon juice, passionfruit syrup, peach schnapps."
-      },
-      {
-        "name": "AMF",
-        "description": "The bartender's suicide. In blue. Vodka, gin, rum, blue curacao, sweet and sour, top with sprite."
-      }
-    ]
-}
 
 var accountSid = 'ACc7e2749325bb21ed1e9c4dece6a436c6'; // Your Account SID from www.twilio.com/console
 var authToken = 'a62fb864f147b6b68377b88728e1650f';   // Your Auth Token from www.twilio.com/console
@@ -36,12 +6,17 @@ var twilio = require('twilio');
 
 var server_port = (process.env.PORT || 8080);
 
+var liquors = {};
+
 
 function initializeServer()
 {
 
   var express = require('express')
   var app = express()
+
+  var fs = require('fs');
+  liquors = JSON.parse(fs.readFileSync('liquors.json', 'utf8'));
 
   app.get('/drink', function (req, res) {
 
