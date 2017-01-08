@@ -6,25 +6,25 @@
       },
       {
         "name": "The Revolver",
-        "description": "Rye heavy bourbon, coffee liqueur, orange bitters, and orange garnish."
+        "description": "Rye heavy bourbon\n coffee liqueur\n orange bitters\n orange garnish."
       },
       {
         "name": "Suffering Bastard",
-        "description": "Bourbon, gin, lime juice, bitters, ginger ale."
+        "description": "Bourbon, gin\n lime juice\n bitters\n ginger ale."
       },
       {
         "name": "The Paper Plane",
-        "description": "Bourbon, Aperol, Amaro, fresh lemon juice"
+        "description": "Bourbon\n Aperol\n Amaro\n fresh lemon juice."
       }
     ],
   "vodka": [
       {
         "name": "Mitch Martini",
-        "description": "Zubrowka Bison grass vodka, pressed apple juice, lemon juice, passionfruit syrup, peach schnapps."
+        "description": "Zubrowka Bison grass vodka\n pressed apple juice\n lemon juice\n passionfruit syrup\n peach schnapps."
       },
       {
         "name": "AMF",
-        "description": "The bartender's suicide. In blue. Vodka, gin, rum, blue curacao, sweet and sour, top with sprite."
+        "description": "The bartender's suicide.\n vodka\n gin\n rum\n blue curacao\n sweet and sour\n top with sprite."
       }
     ]
 }
