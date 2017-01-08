@@ -77,7 +77,7 @@ function drink(body, from)
     var firstCapitalized = false;
     for (var key in liquors)
     {
-      response = response.concat(key + "\n");
+      response = response.concat(capitalizeFirstLetter(key) + "\n");
     }
   }
   else {
@@ -105,6 +105,10 @@ function drink(body, from)
         console.log("Sent message to " + from);
     });
   }
+}
+
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 function getRandomInt(min, max) {
