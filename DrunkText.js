@@ -68,7 +68,17 @@ function drink(body, from)
 
   if (body.indexOf("drink") != -1)
   {
-    response = "Respond with your liquor of choice for a drink suggestion!";
+    response = "Respond with your liquor of choice for a drink suggestion, or reply ";
+    response = response.concat("'list' for a list of drink categories!");
+  }
+  else if (body.indexOf("list") != -1)
+  {
+    response = "Drink categories: \n"
+    var firstCapitalized = false;
+    for (var key in liquors)
+    {
+      response = response.concat(key + "\n");
+    }
   }
   else {
     for (var key in liquors)
