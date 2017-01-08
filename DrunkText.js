@@ -29,6 +29,11 @@ var liquors = {
     ]
 }
 
+var accountSid = 'ACc7e2749325bb21ed1e9c4dece6a436c6'; // Your Account SID from www.twilio.com/console
+var authToken = 'a62fb864f147b6b68377b88728e1650f';   // Your Auth Token from www.twilio.com/console
+
+var twilio = require('twilio');
+
 var server_port = (process.env.PORT || 8080);
 
 
@@ -78,10 +83,7 @@ function drink(body, from)
     }
   }
 
-  var accountSid = 'ACc7e2749325bb21ed1e9c4dece6a436c6'; // Your Account SID from www.twilio.com/console
-  var authToken = 'a62fb864f147b6b68377b88728e1650f';   // Your Auth Token from www.twilio.com/console
 
-  var twilio = require('twilio');
   var client = new twilio.RestClient(accountSid, authToken);
 
   client.messages.create({
@@ -89,7 +91,7 @@ function drink(body, from)
       to: from,  // Text this number
       from: '+19709991133' // From a valid Twilio number
   }, function(err, message) {
-      console.log(message.sid);
+      console.log("Sent message to " + from);
   });
 }
 
