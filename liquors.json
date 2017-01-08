@@ -24,7 +24,7 @@
       },
       {
         "name": "AMF",
-        "description": "The bartender's suicide.\nVodka\nGin\nRum\nBlue curacao\n sweet and sour\n top with sprite."
+        "description": "The bartender's suicide.\nVodka\nGin\nRum\nBlue curacao\n sweet and sour\n top: sprite."
       }
     ],
   "gin": [
@@ -58,11 +58,15 @@
   "multiple": [
       {
         "name": "Long Island Iced Tea",
-        "description": "Vodka\nGin\nRum\nTriple sec\n sweet & sour\n splash of coke\n garnish:lemon."
+        "description": "Vodka\nGin\nRum\nTriple sec\n sweet & sour\n splash: coke\n garnish:lemon."
       },
       {
         "name": "Tokyo Tea",
-        "description": "Vodka\nGin\nRum\nTriple sec\nMidori\n sweet & sour\n splash sprite\n garnish: cherry."
+        "description": "Vodka\nGin\nRum\nTriple sec\nMidori\n sweet & sour\n splash: sprite\n garnish: cherry."
+      },
+      {
+        "name": "F*ck Me Hard",
+        "description": "Vodka\nSouthern Comfort\nTriple sec\nAmaretto\n raspberry liqueur\n splash: cranberry\n splash: OJ"
       }
   ]
 }
