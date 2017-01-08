@@ -19,7 +19,7 @@ var liquors = {
     ],
     "vodka": [
       {
-        "name": "Bitch Martini",
+        "name": "Mitch Martini",
         "description": "Zubrowka Bison grass vodka, pressed apple juice, lemon juice, passionfruit syrup, peach schnapps."
       },
       {
