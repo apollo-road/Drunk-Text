@@ -47,12 +47,28 @@
       {
         "name": "Tequila sazerac",
         "description": "Tequila"
+      },
+      {
+        "name": "El Chupacabra",
+        "description": ""
       }
   ],
   "scotch": [
       {
         "name": "Bobby Burns",
-        "description": "Scotch"
+        "description": "Highland Scotch\nBenedictine \n sweet vermouth."
+      },
+      {
+        "name": "Rusty Quail",
+        "description": "A riff on the rusty nail. Courtesy of Ray Harvey."
+      },
+      {
+        "name": "Seven Ways to Sunday",
+        "description": "Recipe by Ray Harvey"
+      },
+      {
+        "name": "The Bright and the Refreshingly Beautiful",
+        "description": "Recipe by Ray Harvey."
       }
   ],
   "multiple": [
