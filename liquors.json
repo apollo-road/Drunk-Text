@@ -15,6 +15,14 @@
       {
         "name": "The Paper Plane",
         "description": "Bourbon\nAperol\nAmaro\n fresh lemon juice."
+      },
+      {
+        "name": "Double Rye Whiskey Sazerac",
+        "description": "Hold on to your briches."
+      },
+      {
+        "name": "Black Manhattan",
+        "description": "Added Amaro makes this a smooth choice."
       }
     ],
   "vodka": [
@@ -45,11 +53,23 @@
   ],
   "tequila": [
       {
-        "name": "Tequila sazerac",
+        "name": "Tequila Sazerac",
         "description": "Tequila"
       },
       {
         "name": "El Chupacabra",
+        "description": ""
+      },
+      {
+        "name": "Tequila Sangria",
+        "description": ""
+      },
+      {
+        "name": "Tequila Old Fashioned",
+        "description": "The New-Fashioned"
+      },
+      {
+        "name": "The Martinez",
         "description": ""
       }
   ],
@@ -71,7 +91,7 @@
         "description": "Recipe by Ray Harvey."
       }
   ],
-  "multiple": [
+  "combination": [
       {
         "name": "Long Island Iced Tea",
         "description": "Vodka\nGin\nRum\nTriple sec\n sweet & sour\n splash: coke\n garnish:lemon."
@@ -83,6 +103,34 @@
       {
         "name": "F*ck Me Hard",
         "description": "Vodka\nSouthern Comfort\nTriple sec\nAmaretto\n raspberry liqueur\n splash: cranberry\n splash: OJ"
+      }
+  ],
+  "pisco": [
+      {
+        "name": "Piscola",
+        "description": "Pisco and coke. Simple but unique."
+      },
+      {
+        "name": "Pisco Sour",
+        "description": "A fresh start."
+      }
+  ],
+  "ace gillett's": [
+      {
+        "name": "The Kung Fu Fighter",
+        "description":  "Japanese Whiskey cocktail."
+      },
+      {
+        "name": "Pale Fire",
+        "description": "Mezcal Chartreuse drink."
+      },
+      {
+        "name": "Tranquillo",
+        "description": "Mezcal Absinthe drink."
+      },
+      {
+        "name": "The Hot Rod Lincoln",
+        "description": "Bourbon base."
       }
   ]
 }
