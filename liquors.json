@@ -2,7 +2,7 @@
   "whiskey": [
       {
         "name": "Gold Rush",
-        "description": "Bourbon\n honey\n syrup\n lemon juice."
+        "description": "Bourbon\n honey syrup\n lemon juice."
       },
       {
         "name": "The Revolver",
@@ -118,7 +118,7 @@
   "ace": [
       {
         "name": "The Kung Fu Fighter",
-        "description":  "Japanese Whiskey cocktail."
+        "description": "Japanese Whiskey cocktail."
       },
       {
         "name": "Pale Fire",
@@ -131,6 +131,30 @@
       {
         "name": "The Hot Rod Lincoln",
         "description": "Bourbon base."
+      },
+      {
+        "name": "Booker's Manhattan",
+        "description": "This one's strong."
+      },
+      {
+        "name": "Dog Star",
+        "description": "Spirit Hound series\nGhost Dog white whiskey"
+      },
+      {
+        "name": "Whiskey & Toilet Water",
+        "description": "Spirit Hound series\nGhost Dog white whiskey"
+      },
+      {
+        "name": "Dirty Dog",
+        "description": "Spirit Hound series\nSpirit Hound Gin"
+      },
+      {
+        "name": "Salty Dog",
+        "description": "Spirit Hound series\nSpirit Hound Gin"
+      },
+      {
+        "name": "Big Dog",
+        "description": "Spirit Hound series\nSpirit Hound Gin"
       }
   ]
 }
