@@ -6,6 +6,14 @@ var twilio = require('twilio');
 var fs = require('fs');
 var liquors = JSON.parse(fs.readFileSync('liquors.json', 'utf8'));
 
+var metrics = {
+  "listRequested": 0,
+  "greetingRequested": 0,
+  "drinkRequested": 0,
+  "uniqueNumbers": [],
+  "drinksRecommended": []
+};
+
 module.exports = {
   drunkText: function(req, res) {
     res.send("Drink mOaR whiskeeee");
@@ -29,6 +37,7 @@ function drink(body, from)
   {
     response = "Respond with your liquor of choice for a drink suggestion, or reply ";
     response = response.concat("'list' for a list of drink categories!");
+    metrics.greetingRequested += 1;
   }
   else if (body.indexOf("list") != -1)
   {
@@ -38,6 +47,7 @@ function drink(body, from)
     {
       response = response.concat(capitalizeFirstLetter(key) + "\n");
     }
+    metrics.listRequested += 1;
   }
   else {
     for (var key in liquors)
@@ -47,6 +57,8 @@ function drink(body, from)
         var drinkIndex = getRandomInt(0, liquors[key].length-1);
         var drink = liquors[key][drinkIndex];
         response = drink.name + "\n \n" + drink.description;
+        metrics.drinkRequested += 1;
+        saveMetrics(from, drink.name);
         break;
       }
     }
@@ -72,4 +84,12 @@ function capitalizeFirstLetter(string) {
 
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function saveMetrics(from, drinkName) {
+  if (metrics.uniqueNumbers.indexOf(from) != -1)
+  {
+    metrics.uniqueNumbers.push(from);
+  }
+  metrics.drinksRecommended.push(drinkName);
 }

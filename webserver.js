@@ -60,10 +60,11 @@ function initializeServer()
     AdminService.suspendClient(req,res);
 
   })
-
+  */
   app.listen(server_port, function () {
     console.log('Listening on port ' + server_port);
   })
 }
-*/
+
+
 initializeServer();
